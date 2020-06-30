@@ -1,0 +1,275 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+.icon {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navbar > a {
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+a.active {
+  background-color: white;
+  color: black;
+}
+.maincontent {
+  display: flex;
+}
+
+.sidenav {
+  background-color: lightblue;
+  height: 100%;
+  z-index: 1;
+  right: -100px;
+  display: flex;
+}
+.sidenav a {
+  margin-top: 20%;
+  position: fixed;
+  width: 160px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  right: -160px;
+}
+
+.sidenav :hover {
+  right: -130px;
+}
+
+.sidenav > .git {
+  background-image: url("../docs/Img/github.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  margin-right: 5px;
+  top: 20px;
+}
+.sidenav > .twitter {
+  background-image: url("../docs/Img/twitter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 80px;
+  height: 30px;
+}
+.sidenav > .linkin {
+  background-image: url("../docs/Img/linkin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 140px;
+  height: 30px;
+  margin-right: 15px;
+}
+.sidenav > .email {
+  background-image: url("../docs/Img/mail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 200px;
+  height: 30px;
+}
+
+.content {
+  margin: 70px 50px 10px 70px;
+  display: grid;
+  grid-area: main;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.main > p.large {
+  font-size: 150px;
+}
+.index_name {
+  font-size: 60px;
+}
+.centercontent {
+  display: flex;
+  justify-content: center;
+}
+.centercontent_project {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.contenthead {
+  font-size: 100px;
+  align-self: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: blueviolet;
+  width: 100%;
+}
+.centercontent_about {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.gridcont {
+  display: grid;
+  width: 70%;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "blog1 blogpic1"
+    "blogpic2 blog2"
+    "blog3 blogpic3"
+    "blogpic4 blog4"
+    "blog5 blogpic5";
+}
+.aboutme_text1 {
+  grid-area: blog1;
+  background-color: rgb(218, 218, 218);
+}
+.aboutme_img1 {
+  grid-area: blogpic1;
+  background-image: url("../docs/Img/1.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 96%;
+}
+.aboutme_text2 {
+  grid-area: blog2;
+  background-color: rgb(218, 218, 218);
+}
+.aboutme_img2 {
+  grid-area: blogpic2;
+  background-image: url("../docs/Img/2.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 96%;
+}
+.aboutme_text3 {
+  grid-area: blog3;
+  background-color: rgb(218, 218, 218);
+}
+.aboutme_img3 {
+  grid-area: blogpic3;
+  background-image: url("../docs/Img/3.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  /* justify-self: center; */
+}
+.aboutme_text4 {
+  grid-area: blog4;
+  background-color: rgb(218, 218, 218);
+}
+.aboutme_img4 {
+  grid-area: blogpic4;
+  background-image: url("../docs/Img/4.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 96%;
+}
+.aboutme_text5 {
+  grid-area: blog5;
+  background-color: rgb(218, 218, 218);
+}
+.aboutme_img5 {
+  grid-area: blogpic5;
+  background-image: url("../docs/Img/5.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 96%;
+}
+
+.aboutme_text1,
+.aboutme_img1,
+.aboutme_text2,
+.aboutme_img2,
+.aboutme_text3,
+.aboutme_img3,
+.aboutme_text4,
+.aboutme_img4,
+.aboutme_text5,
+.aboutme_img5 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.title,
+.date {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-size: 20px;
+}
+.projectcont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  background-color: grey;
+  width: 400px;
+  height: 300px;
+  margin: 15px 20px 15px 20px;
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 96%;
+}
+.form1 > label {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.form1 > input.name {
+  width: 50%;
+}
+
+.form1 > input.box {
+  width: 80%;
+  height: 200px;
+}
+textarea {
+  resize: none;
+}
+.form {
+  width: 100%;
+}
+.submit {
+  margin-top: 30px;
+  width: 40%;
+  height: 30px;
+  align-self: center;
+}
+.textcontent > .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.textcontent {
+  width: 40%;
+  margin-left: 100px;
+}
+.aboutme_text {
+  width: 50%;
+}
+.aboutme_img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
